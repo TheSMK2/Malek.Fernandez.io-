@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Portafolio-Malek</title>
+    <link rel="icon" type="image/x-icon" href="images/avatar.jpg">
+    <meta charset="utf-8" />
+    <title></title>
+
+    <!-- callins the css file-->
+    <link rel="stylesheet" href="style.css" />
+
+
+</head>
+<body bgcolor="#12041E"
+      style="color: GhostWhite;">
+    <style id=".container_class">
+        .button {
+            color: white;
+            width: 180px;
+            height: 48px;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+            border-radius: 16%;
+            bottom: 10%;
+            right: 10%;
+        }
+    </style>
+
+    <div class="container">
+
+        <!-- <h1 style="background-color: #BA201A; color: GhostWhite;" id=".container_class">-->
+        <h1 style="color: GhostWhite;">
+            <img src="images/icon hamburger_Menu.png" width="48">
+            TheSMK2
+            <img src="images/icon _linkedin_.png" width="48">
+            <img src="images/icon _email alt_.png" width="48">
+            <img src="images/icon _twitter_.png" width="48">
+        </h1>
+    </div>
+
+    <hr>
+
+    <div id="header" class="container_class">
+        <img src="images/Malek-Profile.png" width="320">
+        <h1> MALEK FERNANDEZ URIBE</h1>
+        <h2 style="color: #F0F569;"> Game designer - UI/UX Overachiever</h2>
+    </div>
+    <p style="background-color: #0A416E;" class="container_class">
+        A Video-game designer from Mexico currently residing in Vancouver, <br>
+        with almost 2 years of experience in the field, specialized in <br>
+        User Experiences. My goal is to expand my career and hone my skills
+        in 3D modeling and programming through hands-on experience.
+    </p>
+
+
+    <section class="container_class">
+
+        <form action="DowloadCV-Page.html">
+            <button type="submit" class="button">DowloadCV</button>
+            <button type="submit" class="button">Contact me</button>
+            <button type="submit" class="button">PlayGame</button>
+
+        </form>
+
+    </section>
+
+
+
+
+    <!-- Difuse background-->
+    <canvas id="myCanvas" width="1440" height="1800" style="border:1px solid #0A416E;">
+        Your browser does not support the HTML canvas tag.
+    </canvas>
+
+
+
+    <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        // Create gradient
+        var grd = ctx.createLinearGradient(0, 0, 0, 400);
+        grd.addColorStop(0, "#0A416E");
+        grd.addColorStop(1, "#12041E");
+        // Fill with gradient
+        ctx.fillStyle = grd;
+        ctx.fillRect(0, 0, 1440, 1800);
+    </script>
+
+
+
+</body>
+        </html >
