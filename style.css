@@ -12,10 +12,18 @@ font-style: oblique;
 
 }
 
+h2
+{
+font-size: 34px;
+font-style: oblique;
+
+}
+
 p {
+	padding: 20px;
 	font-size: 16px;
 	font-style: normal;
-	
+	color: ghostwhite;
 	text-align:center;
 
 }
@@ -41,6 +49,16 @@ header {
 }
 
 
+.container_buttons{
+	padding: 2px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: space-around;
+}
+
+
 
 
 .container_class button {
@@ -50,7 +68,7 @@ header {
 	font-size: 16px;
 	cursor: pointer;
 	text-align: center;
-	border-radius: 16%;
+	border-radius: 8%;
 	bottom: 10%;
 	right: 10%;
 }
