@@ -15,7 +15,7 @@
 
 <!-- Top Menu-->
 <body style="background-color: #12041E;"
-      style="color: GhostWhite;">
+        style="color: GhostWhite;">
 
     <div class="container">
 
@@ -33,21 +33,23 @@
     <!-- Profile pic text-->
     <div id="header">
         <img src="images/Malek-Profile.png" width="320">
+
+        <div class="title">
         <h1>
             MALEK FERNANDEZ URIBE
         </h1>
             <h2 style="color: #F0F569;">
             Game designer - UI/UX Overachiever
             </h2>
+
+            <p style="background-color: #0A416E;" border-radius: 8%;>
+                A Video-game designer from Mexico currently residing in Vancouver,<br>
+                with almost 2 years of experience in the field, specialized in <br>
+                User Experiences. My goal is to expand my career and hone my skills<br>
+                in 3D modeling and programming through hands-on experience.<br>
+            </p>
+        </div>
     </div>
-
-
-    <p style="background-color: #0A416E;">
-        A Video-game designer from Mexico currently residing in Vancouver,
-        with almost 2 years of experience in the field, specialized in 
-        User Experiences. My goal is to expand my career and hone my skills
-        in 3D modeling and programming through hands-on experience.
-    </p>
 
     <div class="container_buttons">
     <section class="container_class">
@@ -67,27 +69,28 @@
     </section>
 </div>
 
-
-
-
-    <!-- Difuse background-->
-    <canvas id="myCanvas" width="1440" height="1800" style="border:1px solid #0A416E;">
-        Your browser does not support the HTML canvas tag.
-    </canvas>
-
-
-
-    <script>
-        var c = document.getElementById("myCanvas");
-        var ctx = c.getContext("2d");
-        // Create gradient
-        var grd = ctx.createLinearGradient(0, 0, 0, 1200);
-        grd.addColorStop(0, "#0A416E");
-        grd.addColorStop(1, "#12041E");
-        // Fill with gradient
-        ctx.fillStyle = grd;
-        ctx.fillRect(0, 0, 1440, 1800);
-    </script>
+    <div class="grid-container">
+    <p style="background-color: #873735">
+        As a designer I try to focus more on user experiences taking into account how people<br>
+        would interact witting games, apps or websites, I like to keep things interactive and fun.
+    </p>
+</div>
+    <div style="background-color: #0A4A7E">
+        <p style="color: GhostWhite;">
+         These are the programs that I use to help me reach my goals.
+        </p>
+        <div class="icons">
+            <img src="fonts/Photoshop.png" width="48">
+            <img src="fonts/Illust.png" width="48">
+            <img src="fonts/adobe-premiere.png" width="48">
+            <img src="fonts/adobe-after.png" width="48">
+            <img src="fonts/Maya-Logo 1.png" width="48">
+            <img src="fonts/Unity.png" width="48">
+            <img src="fonts/unreal-engine.png" width="48">
+            <img src="fonts/Blender.png" width="48">
+            <img src="fonts/Figma.png" width="48">
+        </div>
+    </div>
 
 
 
