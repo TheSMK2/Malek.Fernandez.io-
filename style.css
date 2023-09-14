@@ -35,7 +35,6 @@ header {
 
 
 
-
 .container {
 	padding: 2px;
 	background-color: #BA201A;
@@ -82,12 +81,17 @@ header {
     align-items: center;
 }
 
-	#header h1, h2 {
+	/* #header h1, h2 {
 		display: block;
-	}
+	} */
 
 	a.hover{
 		color:mediumblue;
+	}
+
+	#subText{
+	
+
 	}
 
 
