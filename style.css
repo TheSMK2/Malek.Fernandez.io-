@@ -1,7 +1,6 @@
 
 
 body {
-	background-color: #12041E;	
 	display: flex;
 	flex-direction: column;
 }
@@ -75,10 +74,20 @@ header {
 	color: #F0F569;
     padding: 24px 24px 24px 0px;
     display: flex;
-    align-content: center;
     justify-content: space-around;
     flex-direction: row;
     align-items: center;
+}
+
+#header2 {
+	color: white;
+	font-size: 20px;
+    padding: 24px 24px 24px 24px;
+    background-color: #0A4A7E;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
 }
 
 	/* #header h1, h2 {
@@ -87,11 +96,6 @@ header {
 
 	a.hover{
 		color:mediumblue;
-	}
-
-	#subText{
-	
-
 	}
 
 
