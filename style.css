@@ -1,20 +1,27 @@
 
 
 body {
-	display: flex;
-	flex-direction: column;
+	background-color: #12041E;	
+	
 }
 h1
 {
 font-size: 52px;
-font-style: bold;
 
 }
 
 h2
 {
 font-size: 42px;
-font-style: bold;
+text-align:center;
+
+}
+
+h3
+{
+	font-size: 20px;
+	color: ghostwhite;
+	text-align:center;
 
 }
 
@@ -82,7 +89,7 @@ header {
 #header2 {
 	color: white;
 	font-size: 20px;
-    padding: 24px 24px 24px 24px;
+	padding: 24px 48px 24px 48px;
     background-color: #0A4A7E;
     display: flex;
     flex-direction: column;
@@ -90,9 +97,21 @@ header {
     justify-content: flex-end;
 }
 
-	/* #header h1, h2 {
-		display: block;
-	} */
+#logosAlign {
+	padding: 24px 0px 24px 0px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+#title {
+    color: #F0F569;
+    padding: 48px 24px 24px 24px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
 
 	a.hover{
 		color:mediumblue;
@@ -109,3 +128,4 @@ button {
 		color: black;
 	}
 
+	/* Image Carousel */
