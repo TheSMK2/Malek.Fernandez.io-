@@ -62,7 +62,7 @@
       /* On hover, add a black background color with a little bit see-through */
       .prev:hover,
       .next:hover {
-        background-color: rgba(0, 0, 0, 0.8);
+        background-color: #385369;
       }
       /* Caption text */
       .text {
@@ -94,8 +94,25 @@
       }
       .active,
       .dot:hover {
-        background-color: #111111;
+        background-color: #F0F569;
       }
+
+       /* The dots/bullets/indicators seccond */
+       .dot2 {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #999999;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+      .active,
+      .dot2:hover {
+        background-color: #F0F569;
+      }
+
       /* Fading animation */
       .fade {
         -webkit-animation-name: fade;
@@ -160,7 +177,7 @@
             Game designer - UI/UX Overachiever
             </h2>
 
-            <p style="background-color: #0A416E;" border-radius: 8%;>
+            <p style="background-color: #0A416E;" border-radius: 4px 4px 4px  4px;>
                 A Video-game designer from Mexico currently residing in Vancouver,<br>
                 with almost 2 years of experience in the field, specialized in <br>
                 User Experiences. My goal is to expand my career and hone my skills<br>
@@ -312,6 +329,8 @@
         <span class="dot" onclick="currentSlide(11)"></span>
         <span class="dot" onclick="currentSlide(12)"></span>
       </div>
+
+      
       <script>
         let slideIndex = 0;
         let timeoutId = null;
@@ -351,8 +370,155 @@
            }
           timeoutId = setTimeout(showSlides, 5000); // Change image every 5 seconds
         }
-      </script>
-     <!-- End of image carousel ------------------------------------------------->
+      </script> 
+
+
+<div id="title">
+  <h2>
+      UI/UX Projects 
+  </h2>
+  <h3>
+    These are some of the designs I’ve helped or made myself
+  </h3>
+  <div class="container_buttons">
+      <section class="container_class">
+              <form action="DowloadCV-Page.html">
+              <button type="submit" class="button">See Games</button>
+          </form>
+      </section>
+  </div>
+</div>
+
+<div class="slideshow-container">
+  <div class="mySlides2 fade">
+    <div class="numbertext">1 / 13</div>
+    <img src="videogames/Twin-Hunt-MainMenu.PNG" style="height: 500px;">
+    <div class="text">London, Ebgland</div>
+  </div>
+  <div class="mySlides2 fade">
+    <div class="numbertext">2 / 13</div>
+    <img src="videogames/PlanePrisson.png"  style="height: 500px;">
+    <div class="text">Sunset in Romania</div>
+  </div>
+  <div class="mySlides2 fade">
+    <div class="numbertext">3 / 13</div>
+    <img src="videogames/Melisa-Poster.png"  style="height: 500px;">
+    <div class="text">New York, USA</div>
+  </div>
+  <div class="mySlides2 fade">
+      <div class="numbertext">4 / 13</div>
+      <img src="videogames/Golem-Render3.png"  style="height: 500px;">
+      <div class="text">New York, USA</div>
+    </div>
+    <div class="mySlides2 fade">
+      <div class="numbertext">5 / 13</div>
+      <img src="videogames/TwinHunt-Gameplay.PNG"  style="height: 500px;">
+      <div class="text">New York, USA</div>
+    </div>
+    <div class="mySlides2 fade">
+      <div class="numbertext">6 / 13</div>
+      <img src="videogames/TwinHunt-Gameplay2.PNG"  style="height: 500px;">
+      <div class="text">New York, USA</div>
+    </div>
+    <div class="mySlides2 fade">
+      <div class="numbertext">7 / 13</div>
+      <img src="videogames/House Render4.png"  style="height: 500px;">
+      <div class="text">New York, USA</div>
+    </div>
+    <div class="mySlides2 fade">
+      <div class="numbertext">8 / 13</div>
+      <img src="videogames/Escenario_bw.png"  style="height: 500px;">
+      <div class="text">New York, USA</div>
+    </div>
+    <div class="mySlides2 fade">
+      <div class="numbertext">9 / 13</div>
+      <img src="videogames/model sheet tv 2.png"  style="height: 500px;">
+      <div class="text">New York, USA</div>
+    </div>
+    <div class="mySlides2 fade">
+      <div class="numbertext">10 / 13</div>
+      <img src="videogames/Wip2.png"  style="height: 500px;">
+      <div class="text">New York, USA</div>
+    </div>
+    <div class="mySlides2 fade">
+      <div class="numbertext">11 / 13</div>
+      <img src="videogames/Model View.PNG"  style="height: 500px;">
+      <div class="text">New York, USA</div>
+    </div>
+    <div class="mySlides2 fade">
+      <div class="numbertext">12 / 13</div>
+      <img src="videogames/Zomorfo-Texturas.png"  style="height: 500px;">
+      <div class="text">New York, USA</div>
+    </div>
+    <div class="mySlides2 fade">
+      <div class="numbertext">13 / 13</div>
+      <img src="videogames/StanRevolver.gif"  style="height: 500px;">
+      <div class="text">New York, USA</div>
+    </div>
+  <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides2(1)">&#10095;</a>
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot2" onclick="currentSlide2(0)"></span>
+  <span class="dot2" onclick="currentSlide2(1)"></span>
+  <span class="dot2" onclick="currentSlide2(2)"></span>
+  <span class="dot2" onclick="currentSlide2(3)"></span>
+  <span class="dot2" onclick="currentSlide2(4)"></span>
+  <span class="dot2" onclick="currentSlide2(5)"></span>
+  <span class="dot2" onclick="currentSlide2(6)"></span>
+  <span class="dot2" onclick="currentSlide2(7)"></span>
+  <span class="dot2" onclick="currentSlide2(8)"></span>
+  <span class="dot2" onclick="currentSlide2(9)"></span>
+  <span class="dot2" onclick="currentSlide2(10)"></span>
+  <span class="dot2" onclick="currentSlide2(11)"></span>
+  <span class="dot2" onclick="currentSlide2(12)"></span>
+</div>
+
+
+  <!-- Scrip for images -->
+<script>
+  let slideIndex2 = 0;
+  let timeoutId2 = null;
+  const slides2 = document.getElementsByClassName("mySlides2");
+  const dots2 = document.getElementsByClassName("dot2");
+  
+  showSlides2();
+  function currentSlide2(index) {
+       slideIndex2 = index;
+       showSlides2();
+  }
+ function plusSlides(step) {
+    
+    if(step < 0) {
+        slideIndex2 -= 2;
+        
+        if(slideIndex2 < 0) {
+          slideIndex2 = slides2.length - 1;
+        }
+    }
+    
+    showSlides2();
+ }
+  function showSlides2() {
+    for(let i = 0; i < slides2.length; i++) {
+      slides2[i].style.display = "none";
+      dots2[i].classList.remove('active');
+    }
+    slideIndex2++;
+    if(slideIndex2 > slides2.length) {
+      slideIndex2 = 1
+    }
+    slides2[slideIndex2 - 1].style2.display = "block";
+    dots2[slideIndex2 - 1].classList.add('active');
+     if(timeoutId2) {
+        clearTimeout(timeoutId2);
+     }
+    timeoutId2 = setTimeout(showSlides2, 5000); // Change image every 5 seconds
+  }
+</script>
+
+<!-- End of image carousel ------------------------------------------------->
 </body>
 
 </html>
