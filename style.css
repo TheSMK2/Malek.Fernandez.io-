@@ -56,7 +56,6 @@ header {
 
 
 .container_buttons{
-	border-radius: 4%;
 	padding: 24px;
 	display: flex;
 	flex-direction: row;
@@ -69,6 +68,7 @@ header {
 
 
 .container_class button {
+	border-radius: 4px 4px 4px 4px;
 	color: white;
 	border: 2px solid #BA201A;
 	width: 208px;
