@@ -6,35 +6,105 @@
     <link rel="icon" type="image/x-icon" href="images/avatar.jpg">
     <meta charset="utf-8" />
     <title></title>
+
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        * {
+          box-sizing: border-box
+        }
+        body {
+          font-family: Verdana, sans-serif;
+          margin: 0
+        }
+        </style>
 </head>
-<body bgcolor="#12041E"
-      style="color: GhostWhite;">
+<body>
+    
 
-    <h1 style="background-color: #BA201A; color: GhostWhite; ">
-        TheSMK2
-        <img src="images/icon _linkedin_.png" width="48">
-        <img src="images/icon _email alt_.png" width="48">
-        <img src="images/icon _twitter_.png" width="48">
-    </h1>
+    <div class="container">
 
-    <hr>
+        <img src="images/icon hamburger_Menu.png">
+        <h1 style="color: GhostWhite;">
+            TheSMK2
+        </h1>
+        <div class="icons">
+          <img src="images/icon _linkedin_.png" height="46px">
+          <img src="images/icon _email alt_.png" height="46px">
+          <img src="images/icon _twitter_.png" height="46px">
+      </div>
+    </div>
 
     <h1 style="color: #F0F569;"> Download CV</h1>
 
-    <img src="images/MalekFernandez CV.jpg" width="1240">
-    ctx.fillRect(0, 0, 1440, 1800);
+    <div id="header">
+        <section class="container_class">
+            <form action="MainBrowser.html">
+            <button type="submit" class="button">Return</button>
+        </form>
+        </section>
+        </div>
 
-    <script>
-        var c = document.getElementById("myCanvas");
-        var ctx = c.getContext("2d");
-        // Create gradient
-        var grd = ctx.createLinearGradient(0, 0, 0, 400);
-        grd.addColorStop(0, "#0A416E");
-        grd.addColorStop(1, "#12041E");
-        // Fill with gradient
-        ctx.fillStyle = grd;
-        ctx.fillRect(0, 0, 1440, 1800);
-    </script>
+    <div id="header">
+    <img src="images/MalekFernandez CV.jpg" width="1000">
+    </div>
 
+</section>
+
+<p> </p>
+<p> </p>
+
+
+<div class="container-box">
+    <div style="text-align:center">
+      <h2 style="color: #F0F569;">
+        Contact Me</h2>
+      <p style="color: GhostWhite;">
+        This part is still in production<br>
+        Contact information is at the bottom.
+    </div>
+    <div class="row">
+        <img src="images/avatar.jpg" style="width:35%">
+      <div class="column">
+        <form action="/action_page.php">
+          <label for="fname" style="color: GhostWhite;">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          <label for="lname" style="color: GhostWhite;">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          <label for="country" style="color: GhostWhite;">Country</label>
+          <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+          <label for="subject" style="color: GhostWhite;">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+  
+  
+    <p2 style="color: #F0F569;">
+      All works shows are owned by me<br>
+      malekfdz24@hotmail.com<br>
+      (626) 262 1257
+    </p2>
+  
+    <h2 style="color: GhostWhite;">
+      TheSMK2
+  </h2>
+  
+    <p2 style="color: #F0F569;">
+      Vancouver CA. © 2023</p2>
+  
+    <div class="icons">
+        <img src="images/icon _linkedin_.png" width="48">
+        <img src="images/icon _email alt_.png" width="48">
+        <img src="images/icon _twitter_.png" width="48">
+    </div>
+  </div>
 </body>
 </html>
