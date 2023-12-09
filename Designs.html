@@ -1,0 +1,779 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Portafolio-Malek</title>
+    <link rel="icon" type="image/x-icon" href="images/avatar.jpg">
+    <meta charset="utf-8" />
+    <title></title>
+
+    <!-- callins the css file-->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- /* Image Carousel */ --------------------------------------->
+    <title>Slideshow Images</title>
+    <style>
+      * {
+        box-sizing: border-box
+      }
+      body {
+        font-family: Verdana, sans-serif;
+        margin: 0
+      }
+      .mySlides {
+        display: none
+      }
+      .mySlides2 {
+        display: none
+      }
+      .mySlides3 {
+        display: none
+      }
+      img {
+        vertical-align: middle;
+      }
+      .slideshow-container {
+        
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+        display: grid;
+        align-content: center;
+        justify-content: space-around;
+        align-items: center;
+        justify-items: stretch;
+      }
+
+      .slideshow-container2 {
+        
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+        display: grid;
+        align-content: center;
+        justify-content: space-around;
+        align-items: center;
+        justify-items: stretch;
+      }
+
+      .slideshow-container3 {
+        
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+        display: grid;
+        align-content: center;
+        justify-content: space-around;
+        align-items: center;
+        justify-items: stretch;
+      }
+
+      /* Next & previous buttons */
+      .prev,
+      .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 8px;
+        margin-top: -38px;
+        color: white;
+        font-weight: bold;
+        font-size: 52px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+      /* Position the "next button" to the right */
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover,
+      .next:hover {
+        background-color: #385369;
+      }
+      /* Nex Prev buttons 2 -=---------------------========*/
+      /* Next & previous buttons */
+      .prev2,
+      .next2 {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 8px;
+        margin-top: -38px;
+        color: white;
+        font-weight: bold;
+        font-size: 52px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+      /* Position the "next button" to the right */
+      .next2 {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      /* On hover, add a black background color with a little bit see-through */
+      .prev2:hover,
+      .next2:hover {
+        background-color: #385369;
+      }
+
+      /* Nex Prev buttons 3 -=---------------------========*/
+      /* Next & previous buttons */
+      .prev3,
+      .next3 {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 8px;
+        margin-top: -38px;
+        color: white;
+        font-weight: bold;
+        font-size: 52px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+      /* Position the "next button" to the right */
+      .next3 {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      /* On hover, add a black background color with a little bit see-through */
+      .prev3:hover,
+      .next3:hover {
+        background-color: #385369;
+      }
+
+      /* Caption text */
+      .text {
+        color: #ffffff;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        align-content: center;
+        justify-content: space-around;
+      }
+      /* Number text (1/3 etc) */
+      .numbertext {
+        color: #ffffff;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+      /* The dots/bullets/indicators */
+      .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #999999;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+      .active,
+      .dot:hover {
+        background-color: #F0F569;
+      }
+
+       /* The dots/bullets/indicators seccond */
+       .dot2 {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #999999;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+      .active,
+      .dot2:hover {
+        background-color: #F0F569;
+      }
+
+       /* The dots/bullets/indicators third */
+       .dot3 {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #999999;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+      .active,
+      .dot3:hover {
+        background-color: #F0F569;
+      }
+
+      /* Fading animation */
+      .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+      @-webkit-keyframes fade {
+        from {
+          opacity: .4
+        }
+        to {
+          opacity: 1
+        }
+      }
+      @keyframes fade {
+        from {
+          opacity: .4
+        }
+        to {
+          opacity: 1
+        }
+      }
+      /* On smaller screens, decrease text size */
+      @media only screen and (max-width: 300px) {
+        .prev,
+        .next,
+        .text,
+        .prev2,
+        .next2,
+        .text2 {
+          font-size: 11px
+        }
+      }
+    </style>
+    <!-- End of carousel -------------------------->
+
+</head>
+
+<!-- Top Menu-->
+<body>
+
+    <div class="container">
+
+        <img src="images/icon hamburger_Menu.png">
+        <h1 style="color: GhostWhite;">
+            TheSMK2
+        </h1>
+        <div class="icons">
+          <img src="images/icon _linkedin_.png" height="46px">
+          <img src="images/icon _email alt_.png" height="46px">
+          <img src="images/icon _twitter_.png" height="46px">
+      </div>
+    </div>
+
+    <!-- Profile pic text-->
+    <div id="header">
+        <div class="title">
+        <h1>
+            Design
+        </h1>
+           
+    <div id="title">
+    <h2>
+        Video-Game Projects 
+    </h2>
+    <h3>
+        These are some of the games I’ve helped or made myself
+    </h3>
+    <div class="container_buttons">
+        <section class="container_class">
+                <form action="DowloadCV-Page.html">
+                <button type="submit" class="button">See Games</button>
+            </form>
+        </section>
+    </div>
+</div>
+    <!-- Image carousel --------------------------------------------------->
+
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 13</div>
+          <img src="videogames/Twin-Hunt-MainMenu.PNG" style="height: 500px;">
+          <div class="text">London, Ebgland</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 13</div>
+          <img src="videogames/PlanePrisson.png"  style="height: 500px;">
+          <div class="text">Sunset in Romania</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 13</div>
+          <img src="videogames/Melisa-Poster.png"  style="height: 500px;">
+          <div class="text">New York, USA</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 13</div>
+            <img src="videogames/Golem-Render3.png"  style="height: 500px;">
+            <div class="text">New York, USA</div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">5 / 13</div>
+            <img src="videogames/TwinHunt-Gameplay.PNG"  style="height: 500px;">
+            <div class="text">New York, USA</div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">6 / 13</div>
+            <img src="videogames/TwinHunt-Gameplay2.PNG"  style="height: 500px;">
+            <div class="text">New York, USA</div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">7 / 13</div>
+            <img src="videogames/House Render4.png"  style="height: 500px;">
+            <div class="text">New York, USA</div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">8 / 13</div>
+            <img src="videogames/Escenario_bw.png"  style="height: 500px;">
+            <div class="text">New York, USA</div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">9 / 13</div>
+            <img src="videogames/model sheet tv 2.png"  style="height: 500px;">
+            <div class="text">New York, USA</div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">10 / 13</div>
+            <img src="videogames/Wip2.png"  style="height: 500px;">
+            <div class="text">New York, USA</div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">11 / 13</div>
+            <img src="videogames/Model View.PNG"  style="height: 500px;">
+            <div class="text">New York, USA</div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">12 / 13</div>
+            <img src="videogames/Zomorfo-Texturas.png"  style="height: 500px;">
+            <div class="text">New York, USA</div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">13 / 13</div>
+            <img src="videogames/StanRevolver.gif"  style="height: 500px;">
+            <div class="text">New York, USA</div>
+          </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(0)"></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+        <span class="dot" onclick="currentSlide(8)"></span>
+        <span class="dot" onclick="currentSlide(9)"></span>
+        <span class="dot" onclick="currentSlide(10)"></span>
+        <span class="dot" onclick="currentSlide(11)"></span>
+        <span class="dot" onclick="currentSlide(12)"></span>
+      </div>
+
+      
+      <script>
+        let slideIndex = 0;
+        let timeoutId = null;
+        const slides = document.getElementsByClassName("mySlides");
+        const dots = document.getElementsByClassName("dot");
+        
+        showSlides();
+        function currentSlide(index) {
+             slideIndex = index;
+             showSlides();
+        }
+       function plusSlides(step) {
+          
+          if(step < 0) {
+              slideIndex -= 2;
+              
+              if(slideIndex < 0) {
+                slideIndex = slides.length - 1;
+              }
+          }
+          
+          showSlides();
+       }
+        function showSlides() {
+          for(let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+            dots[i].classList.remove('active');
+          }
+          slideIndex++;
+          if(slideIndex > slides.length) {
+            slideIndex = 1
+          }
+          slides[slideIndex - 1].style.display = "block";
+          dots[slideIndex - 1].classList.add('active');
+           if(timeoutId) {
+              clearTimeout(timeoutId);
+           }
+          timeoutId = setTimeout(showSlides, 5000); // Change image every 5 seconds
+        }
+      </script> 
+
+
+<div id="title">
+  <h2>
+      UI/UX Projects 
+  </h2>
+  <h3>
+    These are some of the designs I’ve helped or made myself
+  </h3>
+  <div class="container_buttons">
+      <section class="container_class">
+              <form action="DowloadCV-Page.html">
+              <button type="submit" class="button">See Designs</button>
+          </form>
+      </section>
+  </div>
+</div>
+
+<div class="slideshow-container2">
+  <div class="mySlides2 fade">
+    <div class="numbertext">1 / 13</div>
+    <img src="designs/60339596_2468925623120159_5114827117732823040_n.jpg" style="height: 500px;">
+    <div class="text">London, Ebgland</div>
+  </div>
+  <div class="mySlides2 fade">
+    <div class="numbertext">2 / 13</div>
+    <img src="designs/Color.png"  style="height: 500px;">
+    <div class="text">Sunset in Romania</div>
+  </div>
+  <div class="mySlides2 fade">
+    <div class="numbertext">3 / 13</div>
+    <img src="designs/Android Large - 3.png"  style="height: 500px;">
+    <div class="text">New York, USA</div>
+  </div>
+  <div class="mySlides2 fade">
+      <div class="numbertext">4 / 13</div>
+      <img src="designs/iPhone 14 Plus - 1.png"  style="height: 500px;">
+      <div class="text">New York, USA</div>
+    </div>
+    <div class="mySlides2 fade">
+      <div class="numbertext">5 / 13</div>
+      <img src="designs/iPhone 14 Plus - 2.png"  style="height: 500px;">
+      <div class="text">New York, USA</div>
+    </div>
+    <div class="mySlides2 fade">
+      <div class="numbertext">6 / 13</div>
+      <img src="designs/iPhone 14 Plus - 3.png"  style="height: 500px;">
+      <div class="text">New York, USA</div>
+    </div>
+    <div class="mySlides2 fade">
+      <div class="numbertext">7 / 13</div>
+      <img src="designs/iPhone 14 Pro - 1.png"  style="height: 500px;">
+      <div class="text">New York, USA</div>
+    </div>
+    <div class="mySlides2 fade">
+      <div class="numbertext">8 / 13</div>
+      <img src="designs/iPhone 14 Pro - 2.png"  style="height: 500px;">
+      <div class="text">New York, USA</div>
+    </div>
+    <div class="mySlides2 fade">
+      <div class="numbertext">9 / 13</div>
+      <img src="designs/Order History.png"  style="height: 500px;">
+      <div class="text">New York, USA</div>
+    </div>
+    <div class="mySlides2 fade">
+      <div class="numbertext">10 / 13</div>
+      <img src="designs/Paynment Window-Tablet.png"  style="height: 500px;">
+      <div class="text">New York, USA</div>
+    </div>
+    <div class="mySlides2 fade">
+      <div class="numbertext">11 / 13</div>
+      <img src="designs/journey-map.png"  style="height: 500px;">
+      <div class="text">New York, USA</div>
+    </div>
+    <div class="mySlides2 fade">
+      <div class="numbertext">12 / 13</div>
+      <img src="designs/Token-Maker_02.png"  style="height: 500px;">
+      <div class="text">New York, USA</div>
+    </div>
+    <div class="mySlides2 fade">
+      <div class="numbertext">13 / 13</div>
+      <img src="designs/Token-Maker_03.png"  style="height: 500px;">
+      <div class="text">New York, USA</div>
+    </div>
+  <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides2(1)">&#10095;</a>
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot2" onclick="currentSlide2(0)"></span>
+  <span class="dot2" onclick="currentSlide2(1)"></span>
+  <span class="dot2" onclick="currentSlide2(2)"></span>
+  <span class="dot2" onclick="currentSlide2(3)"></span>
+  <span class="dot2" onclick="currentSlide2(4)"></span>
+  <span class="dot2" onclick="currentSlide2(5)"></span>
+  <span class="dot2" onclick="currentSlide2(6)"></span>
+  <span class="dot2" onclick="currentSlide2(7)"></span>
+  <span class="dot2" onclick="currentSlide2(8)"></span>
+  <span class="dot2" onclick="currentSlide2(9)"></span>
+  <span class="dot2" onclick="currentSlide2(10)"></span>
+  <span class="dot2" onclick="currentSlide2(11)"></span>
+  <span class="dot2" onclick="currentSlide2(12)"></span>
+</div>
+
+
+  <!-- Scrip for images -->
+<script>
+  let slideIndex2 = 0;
+  let timeoutId2 = null;
+  const slides2 = document.getElementsByClassName("mySlides2");
+  const dots2 = document.getElementsByClassName("dot2");
+  
+  showSlides2();
+  function currentSlide2(index2) {
+       slideIndex2 = index2;
+       showSlides2();
+  }
+ function plusSlides2(step2) {
+    
+    if(step2 < 0) {
+        slideIndex2 -= 2;
+        
+        if(slideIndex2 < 0) {
+          slideIndex2 = slides2.length - 1;
+        }
+    }
+    
+    showSlides2();
+ }
+  function showSlides2() {
+    for(let i = 0; i < slides2.length; i++) {
+      slides2[i].style.display = "none";
+      dots2[i].classList.remove('active');
+    }
+    slideIndex2++;
+    if(slideIndex2 > slides2.length) {
+      slideIndex2 = 1
+    }
+    slides2[slideIndex2 - 1].style.display = "block";
+    dots2[slideIndex2 - 1].classList.add('active');
+     if(timeoutId2) {
+        clearTimeout(timeoutId2);
+     }
+    timeoutId2 = setTimeout(showSlides2, 5000); // Change image every 5 seconds
+  }
+</script>
+
+<!-- End of image carousel ------------------------------------------------->
+<div id="title">
+  <h2>
+    Personal Projects 
+  </h2>
+  <h3>
+    Personal studies and projects outside of professional work
+  </h3>
+  <div class="container_buttons">
+      <section class="container_class">
+              <form action="DowloadCV-Page.html">
+              <button type="submit" class="button">See Projects</button>
+          </form>
+      </section>
+  </div>
+</div>
+
+<div class="slideshow-container2">
+  <div class="mySlides3 fade">
+    <div class="numbertext">1 / 13</div>
+    <img src="illustrations/321565410_976835603294439_8986321880379943724_n.jpg" style="height: 500px;">
+    <div class="text">London, Ebgland</div>
+  </div>
+  <div class="mySlides3 fade">
+    <div class="numbertext">2 / 13</div>
+    <img src="illustrations/EdcBXN8U8AAHnMz.png"  style="height: 500px;">
+    <div class="text">Sunset in Romania</div>
+  </div>
+  <div class="mySlides3 fade">
+    <div class="numbertext">3 / 13</div>
+    <img src="illustrations/EgeJGT4U0AE_5DD.jfif"  style="height: 500px;">
+    <div class="text">New York, USA</div>
+  </div>
+  <div class="mySlides3 fade">
+      <div class="numbertext">4 / 13</div>
+      <img src="illustrations/FattyMe.png"  style="height: 500px;">
+      <div class="text">New York, USA</div>
+    </div>
+    <div class="mySlides3 fade">
+      <div class="numbertext">5 / 13</div>
+      <img src="illustrations/Fithisdick1.png"  style="height: 500px;">
+      <div class="text">New York, USA</div>
+    </div>
+    <div class="mySlides3 fade">
+      <div class="numbertext">6 / 13</div>
+      <img src="illustrations/Fithisdick4.png"  style="height: 500px;">
+      <div class="text">New York, USA</div>
+    </div>
+    <div class="mySlides3 fade">
+      <div class="numbertext">7 / 13</div>
+      <img src="illustrations/Huntlo.png"  style="height: 500px;">
+      <div class="text">New York, USA</div>
+    </div>
+    <div class="mySlides3 fade">
+      <div class="numbertext">8 / 13</div>
+      <img src="illustrations/Korra6.png"  style="height: 500px;">
+      <div class="text">New York, USA</div>
+    </div>
+    <div class="mySlides3 fade">
+      <div class="numbertext">9 / 13</div>
+      <img src="illustrations/LostSOULS Joutaro4.5.png"  style="height: 500px;">
+      <div class="text">New York, USA</div>
+    </div>
+    <div class="mySlides3 fade">
+      <div class="numbertext">10 / 13</div>
+      <img src="illustrations/PopRock5.5.png"  style="height: 500px;">
+      <div class="text">New York, USA</div>
+    </div>
+    <div class="mySlides3 fade">
+      <div class="numbertext">11 / 13</div>
+      <img src="illustrations/Spiderzona1.5png.png"  style="height: 500px;">
+      <div class="text">New York, USA</div>
+    </div>
+    <div class="mySlides3 fade">
+      <div class="numbertext">12 / 13</div>
+      <img src="illustrations/Mila Cloutier.png"  style="height: 500px;">
+      <div class="text">New York, USA</div>
+    </div>
+    <div class="mySlides3 fade">
+      <div class="numbertext">13 / 13</div>
+      <img src="illustrations/tabern.png"  style="height: 500px;">
+      <div class="text">New York, USA</div>
+    </div>
+  <a class="prev" onclick="plusSlides3(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides3(1)">&#10095;</a>
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot3" onclick="currentSlide3(0)"></span>
+  <span class="dot3" onclick="currentSlide3(1)"></span>
+  <span class="dot3" onclick="currentSlide3(2)"></span>
+  <span class="dot3" onclick="currentSlide3(3)"></span>
+  <span class="dot3" onclick="currentSlide3(4)"></span>
+  <span class="dot3" onclick="currentSlide3(5)"></span>
+  <span class="dot3" onclick="currentSlide3(6)"></span>
+  <span class="dot3" onclick="currentSlide3(7)"></span>
+  <span class="dot3" onclick="currentSlide3(8)"></span>
+  <span class="dot3" onclick="currentSlide3(9)"></span>
+  <span class="dot3" onclick="currentSlide3(10)"></span>
+  <span class="dot3" onclick="currentSlide3(11)"></span>
+  <span class="dot3" onclick="currentSlide3(12)"></span>
+</div>
+
+
+  <!-- Scrip for images -->
+
+  <script>
+    let slideIndex3 = 0;
+    let timeoutId3 = null;
+    const slides3 = document.getElementsByClassName("mySlides3");
+    const dots3 = document.getElementsByClassName("dot3");
+  
+    showSlides3();
+    function currentSlide3(index3) {
+      slideIndex3 = index3;
+      showSlides3();
+    }
+  
+    function plusSlides3(step3) {
+      if (step3 < 0) {
+        slideIndex3 -= 2;
+  
+        if (slideIndex3 < 0) {
+          slideIndex3 = slides3.length - 1;
+        }
+      }
+  
+      showSlides3();
+    }
+  
+    function showSlides3() {
+      for (let i = 0; i < slides3.length; i++) {
+        slides3[i].style.display = "none";
+        dots3[i].classList.remove('active');
+      }
+      slideIndex3++;
+      if (slideIndex3 > slides3.length) {
+        slideIndex3 = 1;
+      }
+      slides3[slideIndex3 - 1].style.display = "block";
+      dots3[slideIndex3 - 1].classList.add('active');
+      if (timeoutId3) {
+        clearTimeout(timeoutId3);
+      }
+      timeoutId3 = setTimeout(showSlides3, 5000); // Change image every 5 seconds
+    }
+  </script>
+  
+  <p> </p>
+  <p> </p>
+<!-- End of image carousel ------------------------------------------------->
+
+
+<div class="container-box">
+  <div style="text-align:center">
+    <h2 style="color: #F0F569;">
+      Contact Me</h2>
+    <p style="color: GhostWhite;">
+      This part is still in production<br>
+      Contact information is at the bottom.
+  </div>
+  <div class="row">
+      <img src="images/avatar.jpg" style="width:35%">
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname" style="color: GhostWhite;">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname" style="color: GhostWhite;">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="country" style="color: GhostWhite;">Country</label>
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+        <label for="subject" style="color: GhostWhite;">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+
+
+  <p2 style="color: #F0F569;">
+    All works shows are owned by me<br>
+    malekfdz24@hotmail.com<br>
+    (626) 262 1257
+  </p2>
+
+  <h2 style="color: GhostWhite;">
+    TheSMK2
+</h2>
+
+  <p2 style="color: #F0F569;">
+    Vancouver CA. © 2023</p2>
+
+  <div class="icons">
+      <img src="images/icon _linkedin_.png" width="48">
+      <img src="images/icon _email alt_.png" width="48">
+      <img src="images/icon _twitter_.png" width="48">
+  </div>
+</div>
+
+</body>
+
+</html>
